@@ -1,4 +1,4 @@
 body {
-    background-color: #F7F8FA;
-    display: inline-block;
+    background-color: rgb(234, 240, 243);
+    display: table-column;
   }
