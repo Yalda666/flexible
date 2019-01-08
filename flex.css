@@ -3,6 +3,18 @@ body {
   font:100%/1.5 georgia, helvetica,arial,sans-serif;
 }
 
+a{
+  color:rgb(116, 172, 255);
+}
+
+a:hover{
+  background-color: blue;
+}
+
+a:visited:hover{
+  background-color: black;
+}
+
 table.main{
   margin-left: 20%;
   margin-right: 20%;
@@ -24,9 +36,14 @@ h2{
   text-align: left;
 }
 
+p{
+  text-align: left;
+}
+
 .quote{
   font-family: Georgia;
   font-style: italic;
   font-variant-caps: small-caps;
   text-align: left;
 }
+
