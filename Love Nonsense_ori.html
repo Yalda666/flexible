@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase no-indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><style type="text/css"></style><title>Love Nonsense</title>
+<script src="Love%20Nonsense_ori_fichiers/modernizr-1.js"></script>
+<link rel="stylesheet" href="Love%20Nonsense_ori_fichiers/a.css">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!--[if lte IE 8]><link rel="stylesheet" href="/s/i/?1320834412"><![endif]-->
+<link rel="alternate" type="application/rss+xml" title="Love Nonsense Feed" href="https://lovenonsense.com/feed">
+<link rel="alternate" type="application/rss+xml" title="Love Nonsense Comments Feed" href="https://lovenonsense.com/comments/feed">
+<!--
+I actually wrote a plugin to remove all the nonsensical meta-cruft Wordpress
+wants to put in the head of every document.
+Instead of all the WP cruft I personally added this extra line of Apple nonsense
+-->
+<link rel="apple-touch-icon" href="https://lovenonsense.com/g/t.png">
+<link rel="dns-prefetch" href="https://s.w.org/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/lovenonsense.com\/wordpress\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.0.3"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="Love%20Nonsense_ori_fichiers/wp-emoji-release.js" type="text/javascript" defer="defer"></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="wp-block-library-css" href="Love%20Nonsense_ori_fichiers/style.css" type="text/css" media="all">
+<link rel="https://api.w.org/" href="https://lovenonsense.com/wp-json/">
+</head><body><h1 class="header" role="banner"><a href="https://lovenonsense.com/">Love Nonsense</a><span class="nonsense" title="">lovenonsen</span></h1>
+<div class="section" role="main">
+<div class="article">
+	<h2 class="love"><a href="https://lovenonsense.com/370">The bored, polite bot</a></h2><div class="nonsense" title="">theboredpo</div>
+	<p>A while ago I created this bot that <a href="https://vasilis.nl/nerd/the-daily-dwagd-an-inspiration-bot/">fetches a work from the Drawings, Prints and Graphic Design Department</a> of the <a href="https://collection.cooperhewitt.org/">Cooper Hewitt Smithsonian Design Museum</a> and <a href="https://vasilis.nl/daily-dwagd/">posts it to a website</a> and <a href="https://twitter.com/DailyDwagd">to twitter, three times a day</a>. I like this pace. It’s not an overload. But sometimes it’s not enough. What if I want a new image <em>right now</em>. The easy option would be to surf to the <a href="https://collection.cooperhewitt.org/">Cooper Hewitt site</a>
+ and add a query into the search field. The not so easy option would be 
+to create a twitter bot that posts an image of a thing if you ask it to.
+ Politely.</p>
+<p>So imagine that you’re bored and you want to see an image of a shark. Now you can ask <a href="https://twitter.com/onethingplease">@onethingplease</a>  to send you <a href="https://twitter.com/intent/tweet?text=@onethingplease+a+shark,+please">a shark, please</a>.
+ Be sure to include the word ‘please’. It’s a sensitive bot that will 
+not answer you without it. And right so. The internet can use some 
+manners. But if you do ask it politely it will do its best to find an 
+image of a shark — or whatever you ask it — in the Cooper Hewitt 
+collection. And after a few minutes of searching it will <em>probably</em>
+ send it to you. Or well. Probably not. It is not that accurate. But the
+ results are definitely more surprising than all those fancy 
+“intelligent” image search algorithms we’re used to.</p>
+<p>A few of you will try it out. And ask it to send you an image of 
+beer. Or wine. Or a book. Or a computer. Or a lion. Or an alien. But 
+most of the time this bot will be idling. In order to prevent it from 
+getting too bored I gave it the power to update its profile pictures if 
+nobody has asked it anything in the last 30 minutes. This means it will 
+probably do this at least 40 times a day. And nobody will notice. Which 
+makes you wonder. If a bot updated its profile pictures and no human saw
+ it, did it actually happen?</p>
+	<ul class="details">
+		<li><cite>Vasilis</cite></li>
+		<li><time datetime="2015-10-24T14:59:08+00:00">October 24th, 2015</time></li>
+		<li><a href="https://lovenonsense.com/370">Direct link</a></li>
+		<li><a href="http://twitter.com/home?status=The+bored%2C+polite+bot%20https://lovenonsense.com/370%20%23lovenonsense" class="tweet" title="Tweeet this!"><span>twitter</span></a></li>
+		<!-- <li class="commentcount"></li> -->
+	</ul>
+	<!-- So what do you think about that! A genuine HR! -->
+	<hr>
+</div>
+<div class="article">
+	<h2 class="love"><a href="https://lovenonsense.com/366">A take-a-break-bot</a></h2><div class="nonsense" title="">atakeabrea</div>
+	<p>Last week I was working on a course with a colleague of mine. After a while he told me to take a break. He suggested me to play <a href="https://itunes.apple.com/us/app/pause-relaxation-at-your-fingertip/id991764216?mt=8">a game called Pause</a>
+ on my phone. I told him that instead of playing games during my break, I
+ usually take a look at the ceiling. And when I looked up I realised 
+that most ceilings in offices are rather dull. So I created <a href="https://vasilis.nl/ceiling/">the Ceiling Bot</a>.</p>
+<p>If you let it, that site will notify you every two hours that it is 
+time to take a look at the ceiling. If you click on the notification 
+you’ll see a new ceiling. Most of these ceilings are probably much more 
+interesting that the one you see when you look up right now. Like <a href="https://vasilis.nl/ceiling/ceilings/46.html">this incredible glass dome</a>. Or <a href="https://vasilis.nl/ceiling/ceilings/54.html">this chandelier</a>.  10 minutes is probably not enough to see all the details in <a href="https://vasilis.nl/ceiling/ceilings/53.html">this ceiling of a mosque</a>. Or this <a href="https://vasilis.nl/ceiling/ceilings/49.html">ceiling in a bar</a>. It looks like <a href="https://vasilis.nl/ceiling/ceilings/39.html">in the past</a> ceilings were <a href="https://vasilis.nl/ceiling/ceilings/42.html">much more important</a> than they are <a href="https://vasilis.nl/ceiling/ceilings/47.html">today</a>. Looks like we’re not very interested in <a href="https://vasilis.nl/ceiling/ceilings/33.html">looking up</a> anymore.</p>
+<p>If you like, you can follow the <a href="https://twitter.com/ceiling_bot">ceiling bot on Twitter</a> as well.</p>
+<p>One day I might create a back-to-work-bot that shows you a computer screen after the ten minute break is over.</p>
+	<ul class="details">
+		<li><cite>Vasilis</cite></li>
+		<li><time datetime="2015-10-19T11:05:28+00:00">October 19th, 2015</time></li>
+		<li><a href="https://lovenonsense.com/366">Direct link</a></li>
+		<li><a href="http://twitter.com/home?status=A+take-a-break-bot%20https://lovenonsense.com/366%20%23lovenonsense" class="tweet" title="Tweeet this!"><span>twitter</span></a></li>
+		<!-- <li class="commentcount"></li> -->
+	</ul>
+	<!-- So what do you think about that! A genuine HR! -->
+	<hr>
+</div>
+<div class="article">
+	<h2 class="love"><a href="https://lovenonsense.com/359">Visual translations</a></h2><div class="nonsense" title="">visualtran</div>
+	<p>In summer I sometimes lay on the grass with my kid and look up at 
+the sky. And we tell each other what kind of shapes we see. Turtles, 
+birds, dogs, horses — indeed, mostly animals. We see shapes we 
+recognise.</p>
+<p>The Google Street View car doesn’t just take pictures of streets, it also looks up and takes pictures of the sky. <a href="http://katierosepipkin.com/">Katie Rose Pipkin</a> created a website that shows these pictures. But it doesn’t just show them, it also <em>translates</em> them. It does so by <a href="http://ifyoulived.org/translations.html">virtually laying OCR software on the grass</a> and asking it what it sees. On the coordinates <em>44.296576,43.168091000000004</em> for instance it sees</p>
+<p>. _\ J . . &lt; _ 2m</p>
+<p>I see several smileys when I look at those characters.</p>
+	<ul class="details">
+		<li><cite>Vasilis</cite></li>
+		<li><time datetime="2015-09-24T10:29:45+00:00">September 24th, 2015</time></li>
+		<li><a href="https://lovenonsense.com/359">Direct link</a></li>
+		<li><a href="http://twitter.com/home?status=Visual+translations%20https://lovenonsense.com/359%20%23lovenonsense" class="tweet" title="Tweeet this!"><span>twitter</span></a></li>
+		<!-- <li class="commentcount"></li> -->
+	</ul>
+	<!-- So what do you think about that! A genuine HR! -->
+	<hr>
+</div>
+<div class="article">
+	<h2 class="love"><a href="https://lovenonsense.com/355">The Daily End Of Time</a></h2><div class="nonsense" title="">thedailyen</div>
+	<p>Yesterday I saw this tweet that mentioned the welcome news that the 
+end of the world has been delayed by two days. It will now end on the 
+25th of September, instead of the 23rd. So with a bit of luck I can 
+still teach my class on Friday. It depends a bit on the exact time and 
+how long such an event takes.</p>
+<p>The world has ended <em>at least</em> 165 times in the past 2000 years, according to this <a href="https://en.wikipedia.org/wiki/List_of_dates_predicted_for_apocalyptic_events">list of dates predicted for apocalyptic events</a>. And it has been ending most regularly in the last 50 years or so. I had no idea the world was such a dangerous place to be on!</p>
+<p>I thought it would be interesting to make the <a href="https://twitter.com/dailyendoftime">Daily End Of Time</a>: a bot that tweets — <a href="https://vasilis.nl/endoftime/">and archives</a> — about one of these catastrophic events. Every day it picks a random <em>end date</em>
+ from the past or the future, and tweets how long ago the world ended. 
+Or how long we still have. It adds a link to the person, or group, who 
+predicted this particular apocalypse. Very interesting reading material.
+ There are a few people who predicted more than one apocalypse! <a href="https://en.wikipedia.org/wiki/Harold_Camping">Harold_Camping</a>
+ for instance was very thorough. He predicted six  eschatons. Just to be
+ sure, I guess. You’ll also find some surprising names on this list. 
+Isaac Newton for instance! He believed <a href="https://en.wikipedia.org/wiki/Isaac_Newton#End_of_the_world">we still have some time</a>. But he might be wrong, and in a few days we might see the world end yet another time.</p>
+<p>With a bit of luck you’ll be able to see two or three more updates before the 25th of September though. I hope you enjoy it!</p>
+	<ul class="details">
+		<li><cite>Vasilis</cite></li>
+		<li><time datetime="2015-09-22T22:24:38+00:00">September 22nd, 2015</time></li>
+		<li><a href="https://lovenonsense.com/355">Direct link</a></li>
+		<li><a href="http://twitter.com/home?status=The+Daily+End+Of+Time%20https://lovenonsense.com/355%20%23lovenonsense" class="tweet" title="Tweeet this!"><span>twitter</span></a></li>
+		<!-- <li class="commentcount"></li> -->
+	</ul>
+	<!-- So what do you think about that! A genuine HR! -->
+	<hr>
+</div>
+<div class="article">
+	<h2 class="love"><a href="https://lovenonsense.com/353">It was 13:37 everywhere</a></h2><div class="nonsense" title="">itwasevery</div>
+	<p>I created a new bot. Twenty four times a day, at 37 minutes past the hour <a href="https://vasilis.nl/it-is-1337/">it tweets a location on earth where it’s 13:37 at that very moment</a>. One minute later this location is added to <a href="https://vasilis.nl/it-is-1337/">this list of past places where it has been 13:37 before</a>.</p>
+	<ul class="details">
+		<li><cite>Vasilis</cite></li>
+		<li><time datetime="2015-09-20T23:04:46+00:00">September 20th, 2015</time></li>
+		<li><a href="https://lovenonsense.com/353">Direct link</a></li>
+		<li><a href="http://twitter.com/home?status=It+was+13%3A37+everywhere%20https://lovenonsense.com/353%20%23lovenonsense" class="tweet" title="Tweeet this!"><span>twitter</span></a></li>
+		<!-- <li class="commentcount"></li> -->
+	</ul>
+	<!-- So what do you think about that! A genuine HR! -->
+	<hr>
+</div>
+<div class="article">
+	<h2 class="love"><a href="https://lovenonsense.com/348">The Daily Synonym</a></h2><div class="nonsense" title="">thedailysy</div>
+	<p>A few days ago I created this <a href="https://vasilis.nl/random/studies/text/09/">rather slow animation of the word <em>minimalist</em> and its synonyms</a>.
+ As you can see, the animation isn’t about minimalism at all, it’s about
+ shaping each letter as random as possible by using random values for 
+quite a few CSS properties. While I was looking for synonyms of the word
+ <em>minimalist</em> I noticed that synonyms are more random than I initially thought. For instance, both <em>modest</em> and <em>artist</em> are synonyms of <em>minimalist</em>. And yes, if I search for synonyms for <em>modest</em>, the results will be completely different than when I do a search for <em>artist</em>.</p>
+<p>I created a website that will look for a synonym of yesterday’s word, every day at 13:37 CET. It started with the word <em>random</em>, which was synonymised to <em>haphazard</em>. According to the <a href="https://words.bighugelabs.com/haphazard">Big Huge Thesaurus</a> <em>haphazard</em> can be synonymised to <em>hit-or-miss</em>, <em>slapdash</em>, <em>slipshod</em>, <em>sloppy</em>, <em>careless</em>, <em>random</em>, or <em>haphazardly</em>.
+ Depending on which word the random algorithm chose next, this could 
+have gone in completely different directions. It went back to <em>random</em>, but it could also have chosen something like <em>careless</em>. I wonder how long it will take until it reaches the word <em>orderly</em>.</p>
+<p>I’m pretty <a href="https://vasilis.nl/synonyms/">happy with the website</a>. It looks focused, and I think it will look even better after a few months, years, decades. You can follow the progress via <a href="https://vasilis.nl/synonyms/feed/">The Daily Synonym RSS Feed</a> if that’s your thing. For the rest of you I created a <a href="https://twitter.com/dailysynonym">Daily Synonym twitter account</a>, which looks pretty good as well, if you ask me.</p>
+<p>Some notes for the fundamentalist synonymists among you: for 
+practical reasons I accept not only synonyms, but also similar terms, 
+and even related terms. There would simply not be enough results if I 
+didn’t. And if for whatever reason there are no results for a certain 
+word — for instance, there are <a href="https://words.bighugelabs.com/entity">no synonyms for the word <em>entity</em></a> — it starts with <em>random</em> again.</p>
+	<ul class="details">
+		<li><cite>Vasilis</cite></li>
+		<li><time datetime="2015-09-17T13:37:26+00:00">September 17th, 2015</time></li>
+		<li><a href="https://lovenonsense.com/348">3 comments</a></li>
+		<li><a href="http://twitter.com/home?status=The+Daily+Synonym%20https://lovenonsense.com/348%20%23lovenonsense" class="tweet" title="Tweeet this!"><span>twitter</span></a></li>
+		<!-- <li class="commentcount">(3)</li> -->
+	</ul>
+	<!-- So what do you think about that! A genuine HR! -->
+	<hr>
+</div>
+<div class="article">
+	<h2 class="love"><a href="https://lovenonsense.com/343">Just the properties</a></h2><div class="nonsense" title="">justthepro</div>
+	<p>I <em>think</em> <a href="http://www.haykranen.nl/">Hay Kranen</a> wondered if an entity is still an entity if you only show its properties. Even if I didn’t get it, I find <a href="http://projects.haykranen.nl/emergence/">his new project</a>
+ fascinating to look at. Unfortunately it doesn’t work on my old 
+Blackberry Playbook. So instead I use a redundant iPhone — with the iCab
+ browser in kiosk mode — <a href="https://lovenonsense.com/wordpress/wp-content/uploads/2015/09/FullSizeRender.jpg">as an art frame</a>.</p>
+<p>I look at it every now and then. And then I see something like “This 
+is a scientific journal”, and I think about what the journal could be 
+about. I’ll never know. Another one was about someone who was born in 
+Montreal. Would it be Mike? I haven’t seen him in 10 years. I recently 
+found out that his old e-mail address doesn’t work anymore. When I meet 
+Canadians I always ask them if they know this Guy from Canada called 
+Mike.</p>
+<p>And when I read this one — <em>he died on 01-01-2005, he’s an art historian</em> — I thought <q>no he isn’t</q>. This amuses me more than it should.</p>
+<p>If you like stuff like this as well you should learn Dutch and subscribe to <a href="https://www.tinyletter.com/circulaire">Hay Kranen’s newsletter</a>.</p>
+	<ul class="details">
+		<li><cite>Vasilis</cite></li>
+		<li><time datetime="2015-09-07T22:35:21+00:00">September 7th, 2015</time></li>
+		<li><a href="https://lovenonsense.com/343">Direct link</a></li>
+		<li><a href="http://twitter.com/home?status=Just+the+properties%20https://lovenonsense.com/343%20%23lovenonsense" class="tweet" title="Tweeet this!"><span>twitter</span></a></li>
+		<!-- <li class="commentcount"></li> -->
+	</ul>
+	<!-- So what do you think about that! A genuine HR! -->
+	<hr>
+</div>
+<div class="article">
+	<h2 class="love"><a href="https://lovenonsense.com/339">Random words</a></h2><div class="nonsense" title="">randomword</div>
+	<p>Computers are pretty good at <a href="https://vasilis.nl/random/">generating random numbers</a>.
+ This fact can be used to generate things like logo’s for us. Yesterday I
+ created a little tool that does just that. I needed this tool because I
+ want to print <a href="https://vasilis.nl/random/random.php?w=minimalism!">the word Minimalism</a> onto a t-shirt. It styles every letter as random as possible every time you refresh the page.</p>
+<p>But computers can do much more than styling stuff for us. They can also create unique content. <a href="https://twitter.com/katierosepipkin">Katie Rose Pipkin</a> and <a href="https://twitter.com/lorenschmidt">Loren Schmidt</a> created this wonderful site that describes <a href="http://inflorescence.city/">a different city every time you refresh the page</a>.</p>
+<p>This somehow reminded me of the <a href="http://drunkmenworkhere.org/200">Drunk Men Work Here Weblog Service</a>, with its unique <a href="http://drunkmenworkhere.org/200info.html">Zero-Click™ posting technology</a>. I created a blog there many years ago which has been posting things every day since, but I can’t remember its name. <a href="http://drunkmenworkhere.org/200.php?action=list">It’s somewhere in this list</a>.</p>
+	<ul class="details">
+		<li><cite>Vasilis</cite></li>
+		<li><time datetime="2015-09-06T10:05:17+00:00">September 6th, 2015</time></li>
+		<li><a href="https://lovenonsense.com/339">Direct link</a></li>
+		<li><a href="http://twitter.com/home?status=Random+words%20https://lovenonsense.com/339%20%23lovenonsense" class="tweet" title="Tweeet this!"><span>twitter</span></a></li>
+		<!-- <li class="commentcount"></li> -->
+	</ul>
+	<!-- So what do you think about that! A genuine HR! -->
+	<hr>
+</div>
+<div class="article">
+	<h2 class="love"><a href="https://lovenonsense.com/332">A Photon, Sturgeon’s law, and the size of everything</a></h2><div class="nonsense" title="">aphotonstu</div>
+	<p>There’s this video of the solar system where you <a href="https://vimeo.com/117815404">travel away from the sun at the speed of light</a>,
+ like a photon. After three minutes this photon reaches the first 
+planet, Mercury, which looks like a small marble. It takes more than 
+eight minutes to reach Earth. It goes on and on for 45 minutes through 
+empty space, passing a little ball every now and then. <a href="http://aswinehart.com/">Alphonse Swinehart</a>
+ took a few liberties while creating this video. First of all, there is 
+no sound in space — which can be emulated by switching off the sound of 
+your device. But more importantly, all planets in our solar system seem 
+to be perfectly aligned. Which in reality they are not. Which made me 
+realise that almost every photon that leaves the sun <em>will never meet anything at all</em>.</p>
+<p>I had to think of this video while I was watching the <a href="https://babelia.libraryofbabel.info/slideshow.html">Universal Slide Show</a> in the <a href="https://babelia.libraryofbabel.info/">Image Section</a> on the incredible <a href="https://libraryofbabel.info/">Library of Babel</a>.
+ The Library of Babel contains all texts that have ever been written, 
+and all texts that will ever be written. It also contains all pictures 
+that have ever been created, all pictures that will ever be created, and
+ even all pictures that have never been taken: <a href="https://babelia.libraryofbabel.info/about.html">every portrait of every person who has ever lived is in there somewhere</a>.
+ The Universal Slide Show shows all of the images, one at a time. I’ve 
+been watching the slide show for quite a while, and so far, all of the 
+images look similar: an image of random noise. This made me wonder. What
+ are the chances of hitting an image of something that can be 
+recognised? Would it be a similar change as a photon traveling from the 
+sun passing by <em>something</em> in the solar system?</p>
+<p>This made me think of the ultimate conclusion of <a href="https://en.wikipedia.org/wiki/Sturgeon%27s_law">Sturgeon’s law</a>.
+ Sturgeon’s law states that 90% of everything is crap. You could apply 
+Sturgeon’s law to the remaining 10%, and conclude that 90% of the things
+ that aren’t crap, turn out to be crap after all. And so on, ad 
+infinitum. When you replace <em>crap</em> with <em>emptiness</em>, you have the changes of a photon passing a rock: very close to zero, but it happens. And if you replace <em>crap</em> with <em>noise</em> you have the chances of seeing a recognisable image on the <a href="https://babelia.libraryofbabel.info/slideshow.html">Universal Slide Show</a>, or finding a readable text in <a href="https://libraryofbabel.info/">the Library</a>.</p>
+<p>The universe is filled with countless stars, and filled with even 
+more planets and other stuff. But the chances of a photon ever hitting 
+one are almost zero. The Library is filled with incredible amounts of <a href="https://libraryofbabel.info/bookmark.cgi?zyhg_jrrebmy147">readable stuff</a>, and almost unimaginable amounts of <a href="https://babelia.libraryofbabel.info/imagebookmark.cgi?a_photon,_sturgeons_law,_and_the_size_of_everything">recognisable images</a>, yet the chances of stumbling upon one are almost zero.</p>
+<p>And then I read that <a href="https://libraryofbabel.info/forum/?topic=size-of-the-library">the Library of Babel is bigger than the Universe</a>.</p>
+	<ul class="details">
+		<li><cite>Vasilis</cite></li>
+		<li><time datetime="2015-08-16T13:41:03+00:00">August 16th, 2015</time></li>
+		<li><a href="https://lovenonsense.com/332">Direct link</a></li>
+		<li><a href="http://twitter.com/home?status=A+Photon%2C+Sturgeon%E2%80%99s+law%2C+and+the+size+of+everything%20https://lovenonsense.com/332%20%23lovenonsense" class="tweet" title="Tweeet this!"><span>twitter</span></a></li>
+		<!-- <li class="commentcount"></li> -->
+	</ul>
+	<!-- So what do you think about that! A genuine HR! -->
+	<hr>
+</div>
+<div class="article">
+	<h2 class="love"><a href="https://lovenonsense.com/328">All the books ever, for free</a></h2><div class="nonsense" title="">allthebook</div>
+	<p>If I wait long enough — and I keep paying my hosting bills the next 
+six trillion years — my server will generate all possible different 
+rectangles in my <a href="http://ghehehe.nl/shop/posters/rectangles/">Daily Rectangle</a> project. It is a long term project.</p>
+<p><a href="https://twitter.com/JonotrainEB">Jonathan Basile</a> is not 
+as patient as I am. He created this project that is much bigger in size 
+and ambition than my simple rectangles. He created —&nbsp;and finished 
+—&nbsp;<a href="https://libraryofbabel.info/">the Library of Babel</a>.</p>
+<p><em>At present it contains all possible pages of 3200 characters, about 10<sup>4677</sup> books</em></p>
+<p>And yes of course, <a href="https://libraryofbabel.info/bookmark.cgi?,bvhazqfsg237">it also contains this blog post</a>.</p>
+	<ul class="details">
+		<li><cite>Vasilis</cite></li>
+		<li><time datetime="2015-08-14T22:22:50+00:00">August 14th, 2015</time></li>
+		<li><a href="https://lovenonsense.com/328">4 comments</a></li>
+		<li><a href="http://twitter.com/home?status=All+the+books+ever%2C+for+free%20https://lovenonsense.com/328%20%23lovenonsense" class="tweet" title="Tweeet this!"><span>twitter</span></a></li>
+		<!-- <li class="commentcount">(4)</li> -->
+	</ul>
+	<!-- So what do you think about that! A genuine HR! -->
+	<hr>
+</div>
+
+<div class="navigation" role="navigation">
+	<div class="alignleft"><a href="https://lovenonsense.com/page/2">« Older Entries</a></div>
+	<div class="alignright"></div>
+</div>
+</div>
+<div class="footer" role="complimentary">
+<div class="items">
+	<div class="item">
+		<h4>Uselessness</h4>
+		<ul>
+			<li><a href="https://lovenonsense.com/apology">Apology</a></li>
+<li><a href="https://lovenonsense.com/attention">Attention</a></li>
+<li><a href="https://lovenonsense.com/thanks">Thanks</a></li>
+			<li><a href="https://lovenonsense.com/feed/">RSS</a></li>
+		</ul>
+		<h4>Nonsense</h4>
+		<ul>
+			<li><a href="https://lovenonsense.com/category/art">Art</a></li>
+	<li><a href="https://lovenonsense.com/category/design">Design</a></li>
+	<li><a href="https://lovenonsense.com/category/internets">Internets</a></li>
+	<li><a href="https://lovenonsense.com/category/japan">Japan</a></li>
+	<li><a href="https://lovenonsense.com/category/law">Law</a></li>
+	<li><a href="https://lovenonsense.com/category/logorrhoea">Logorrhoea</a></li>
+	<li><a href="https://lovenonsense.com/category/nonsense">Nonsense</a></li>
+	<li><a href="https://lovenonsense.com/category/religion">Religion</a></li>
+	<li><a href="https://lovenonsense.com/category/spare-time">Spare time</a></li>
+	<li><a href="https://lovenonsense.com/category/useful">Useful</a></li>
+	<li><a href="https://lovenonsense.com/category/useless">Useless</a></li>
+		</ul>
+<!--
+It's actually pretty hard to remove all the nonsense that Wordpress adds to a simple category list.
+Titles, classes, they can only be removed with some custom PHP. But the silliest thing is that the
+default output is wrapped inside a <li>. It's true! Wordpress thinks that the items in a sidebar form
+an unordered list! Sure it is, just like a paragraph is a list of words and an HTML page is a list of tags.
+-->
+	</div>
+	<div class="item">
+
+   <h4>Logorrhoea</h4>
+   <ul class="logorrhoea">	<li><a href="https://lovenonsense.com/348#comment-8369"><cite title="The Daily Synonym">Vasilis</cite> After four days it looks like this: haphazard ←...</a></li>
+	<li><a href="https://lovenonsense.com/348#comment-8359"><cite title="The Daily Synonym">Vasilis</cite> That’s random. It could take a while to get...</a></li>
+	<li><a href="https://lovenonsense.com/348#comment-8358"><cite title="The Daily Synonym">Albert</cite> Cool! Random -&gt; haphazard -&gt; random?...</a></li>
+	<li><a href="https://lovenonsense.com/328#comment-8072"><cite title="All the books ever, for free">Vasilis</cite> As long as the Library of Babel exists, I...</a></li>
+	<li><a href="https://lovenonsense.com/328#comment-8071"><cite title="All the books ever, for free">Vasilis</cite> It gets even better. All the possible Daily...</a></li>
+</ul>
+
+
+
+	</div>
+	<div class="item">
+		<h4>Blabla</h4>
+		<form method="get" class="footersearch" id="searchform" action="https://lovenonsense.com/">
+			<fieldset>
+				<label>Search <input type="text" name="s" id="s" placeholder="E.g. micturations"></label>
+				<input type="submit" id="searchsubmit" value="Search">
+			</fieldset>
+		</form>
+		<h4>Order</h4>
+		<ul>
+				<li><a href="https://lovenonsense.com/date/2015/10">October 2015</a></li>
+	<li><a href="https://lovenonsense.com/date/2015/09">September 2015</a></li>
+	<li><a href="https://lovenonsense.com/date/2015/08">August 2015</a></li>
+	<li><a href="https://lovenonsense.com/date/2015/07">July 2015</a></li>
+	<li><a href="https://lovenonsense.com/date/2014/08">August 2014</a></li>
+	<li><a href="https://lovenonsense.com/date/2013/12">December 2013</a></li>
+	<li><a href="https://lovenonsense.com/date/2013/05">May 2013</a></li>
+	<li><a href="https://lovenonsense.com/date/2012/04">April 2012</a></li>
+	<li><a href="https://lovenonsense.com/date/2012/03">March 2012</a></li>
+	<li><a href="https://lovenonsense.com/date/2011/02">February 2011</a></li>
+	<li><a href="https://lovenonsense.com/date/2010/11">November 2010</a></li>
+	<li><a href="https://lovenonsense.com/date/2010/10">October 2010</a></li>
+	<li><a href="https://lovenonsense.com/date/2010/05">May 2010</a></li>
+	<li><a href="https://lovenonsense.com/date/2010/03">March 2010</a></li>
+	<li><a href="https://lovenonsense.com/date/2010/02">February 2010</a></li>
+	<li><a href="https://lovenonsense.com/date/2010/01">January 2010</a></li>
+		</ul>
+		<!-- <h4>Chaos</h4>
+		<p class="chaos"> -->
+		<!-- </p> -->
+	</div>
+</div>
+</div>
+<script src="Love%20Nonsense_ori_fichiers/jquery.js"></script>
+<script src="Love%20Nonsense_ori_fichiers/a"></script>
+<script type="text/javascript" src="Love%20Nonsense_ori_fichiers/wp-embed.js"></script>
+</body></html>
